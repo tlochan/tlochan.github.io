@@ -17,7 +17,7 @@ function createMap () {
 
   // Create a baseMaps object to hold the lightmap layer.
   let baseMaps = {
-    "lightmap":lightmap
+   // "lightmap":lightmap
   };
 
   // Create an overlayMaps object to hold the bikeStations layer.
