@@ -7,7 +7,7 @@ function createMap () {
   let myMap = L.map("map-id",{
     center: newYorkCoords,
     zoom:mapZoomLevel,
-    layers: [lightmap, bikeStations]
+    //layers: [lightmap, bikeStations]
   });
   // Create the tile layer that will be the background of our map.
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
