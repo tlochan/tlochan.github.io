@@ -2,7 +2,7 @@
  let mapZoomLevel = 12;
 
 // Create the createMap function.
-function createMap (bikeStations) {
+function createMap () {
   // Create the map object with options.
   let myMap = L.map("map-id",{
     center: newYorkCoords,
@@ -28,7 +28,7 @@ function createMap (bikeStations) {
   // Create a layer control, and pass it baseMaps and overlayMaps. Add the layer control to the map.
   L.control.layers(baseMaps,overlapMaps).addTo(myMap);
 };
-createMap();
+
 // Create the createMarkers function.
 function createMarkers(){
   // Pull the "stations" property from response.data.
@@ -57,4 +57,5 @@ function createMarkers(){
   });
 };
 createMarkers();
+createMap();
 // Perform an API call to the Citi Bike API to get the station information. Call createMarkers when it completes.
